@@ -5,7 +5,7 @@ d = deque('hello')
 print(d)
 d.append(4)
 print(d)
-#comment
+#comment  1
 
 
 
