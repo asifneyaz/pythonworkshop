@@ -39,4 +39,3 @@ line = 'fjdsjfk:ufdgs:/adsjf/dshjf:fdhjs'
 s1, *s2, s3 = line.split(':')
 
 
-
