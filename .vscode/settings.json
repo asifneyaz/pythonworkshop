@@ -2,6 +2,6 @@
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.linting.pydocstyleEnabled": false,
-    "python.pythonPath": "env/bin/python",
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3",
     "code-runner.runInTerminal": true
 }
