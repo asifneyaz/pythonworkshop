@@ -230,3 +230,6 @@ ll.addNode(node3)
 ll.addNode(node4)
 ll.addNode(node5)
 ll.print_list()
+
+node5.set_next = None
+print(id(node5.next))
