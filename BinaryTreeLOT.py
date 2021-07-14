@@ -11,30 +11,33 @@ def level_order(root, result):
     while not q.empty():
         node = q.get()
         result.append(node.getData())
-        if BinaryTreeNode.getLeft() is not None:
-            q.put(BinaryTreeNode.getLeft())
-        if BinaryTreeNode.getRight() is not None:
-            q.put(BinaryTreeNode.getRight())
+        if BinaryTreeNode.get_left() is not None:
+            q.put(BinaryTreeNode.get_left())
+        if BinaryTreeNode.get_right() is not None:
+            q.put(BinaryTreeNode.get_right())
 
 
 class BinaryTreeNode:
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
         self.left = None
         self.right = None
     #Set Data
-    def setData(self,data):
+
+    def set_data(self, data):
         return self.data
     #get Data
-    def getData(self):
+
+    def get_data(self):
         return self.data
-    def getData(self):
-        return self.data
+
     #get left child of node
-    def getLeft(self):
+    def get_left(self):
         return self.left
+
     #get right child
-    def getRight(self):
+
+    def get_right(self):
         return self.right
 
 
