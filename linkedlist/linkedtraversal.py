@@ -2,6 +2,7 @@
 # |1|*|----->|2|*|----->|3|*|
 
 #define Node class
+
 class Node:
     #function to initalize node
     def __init__(self,data):
