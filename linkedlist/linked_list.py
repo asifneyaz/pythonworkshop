@@ -220,9 +220,9 @@ class LinkedList:
         print(node_list)
 
 
-node1 = Node(1)
+node1 = Node(7)
 node2 = Node(2)
-node3 = Node(3)
+node3 = Node(8)
 node4 = Node(4)
 node5 = Node(5)
 

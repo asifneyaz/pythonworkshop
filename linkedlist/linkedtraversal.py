@@ -53,7 +53,6 @@ class LinkedList:
             temp = temp.next
 
     
-
 if __name__ == '__main__':
     llist = LinkedList()
     llist.push(3)
