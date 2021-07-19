@@ -39,10 +39,8 @@ class LinkedList:
 
         while current_node.next is not None:
             current_node = current_node.next
-
-        new_node = node
-        new_node.next = None
-        current_node.next = new_node
+        node.next = None
+        current_node.next = node
         self.length = self.length + 1
 
     def print_linked_list(self):
@@ -55,14 +53,11 @@ class LinkedList:
         print(node_list)
 
 
-
-
-
-
 if __name__ == '__main__':
     linked_list_object = LinkedList()
     node0 = Node(7)
-    node1 = Node(2)
+
+    node1 = Node(7)
     node2 = Node(5)
     node3 = Node(3)
     node4 = Node(1)
