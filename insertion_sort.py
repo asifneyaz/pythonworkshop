@@ -1,14 +1,30 @@
-def insertion_sort(arr):
-    for j in range(1,len(arr)):
-        key = arr[j]
-        i = j - 1
-        while(i>=0 and arr[i] > key):
-            arr[i+1] = arr[i]
-            i = i - 1
-        arr[i+1] = key
-    return arr
 
-A = [7, 2, 3, 1, 5, 4]
-print(insertion_sort(A))
-B = [80, 38, 27, 9, 1, 102, 78]
-print(insertion_sort(B))
+
+
+def insertion_sort(A):
+    for index in range(1, len(A)):
+        position = index - 1
+        temp = A[index]
+
+        while position >= 0:
+            if temp < A[position]:
+                A[position+1] = A[position]
+                position = position - 1
+            else:
+                break
+        A[position+1] = temp
+    return A
+
+
+sol = insertion_sort([4,1,2,6,3,5])
+print(sol)
+
+
+
+
+
+
+
+
+
+

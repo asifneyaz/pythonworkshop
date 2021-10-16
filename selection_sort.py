@@ -1,18 +1,19 @@
-def smallest_element(array_input):
-    smallest = array_input[0]
-    smallest_index = 0
-    for i in range(len(array_input)):
-        if array_input[i] < smallest:
-            smallest = array_input[i]
-            smallest_index = i
-    return smallest_index
+# Python program for implementation of Selection
+# Sort
 
-def selection_sort(array_input):
-    new_array = []
-    for i in range(len(array_input)):
-        smallest = smallest_element(array_input)
-        new_array.append(array_input.pop(smallest))
-    return new_array
+A = [64, 25, 12, 22, 11]
 
-#print(smallest_element([5, 0, 4, 9, 7, 10, 1, 3]))
-print(selection_sort([5, 0, 4, 9, 7, 10, 1, 3]))
+# Traverse through all array elements
+for i in range(len(A)):
+    min_index = i
+    for j in range(i+1, len(A)):
+        if A[min_index] > A[j]:
+            min_index = j
+    A[min_index], A[i] = A[i], A[min_index]
+
+
+
+# Driver code to test above
+print(A)
+
+
